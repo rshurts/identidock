@@ -5,11 +5,11 @@ proxy:
   ports:
     - 80:80
   environment:
-    - NGINX_HOST=localhost
+    - NGINX_HOST=192.168.99.100
     - NGINX_PROXY=http://identidock:9090
 
 identidock:
-  image: identidock:latest
+  image: identidock:0.1
   links:
     - dnmonster
     - redis
