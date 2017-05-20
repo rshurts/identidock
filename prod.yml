@@ -5,7 +5,7 @@ proxy:
   ports:
     - 80:80
   environment:
-    - NGINX_HOST=192.168.99.100
+    - NGINX_HOST=0.0.0.0
     - NGINX_PROXY=http://identidock:9090
 
 identidock:
