@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.6.1
 
 run groupadd -r uwsgi && useradd -r -g uwsgi uwsgi
 RUN pip install Flask==0.12.1 uWSGI==2.0.15 requests==2.14.2 redis==2.10.5
