@@ -1,7 +1,7 @@
 identidock:
   build: .
   ports:
-    - 5000:5000
+    - "5000:5000"
   environment:
     ENV: DEV
   volumes:
@@ -14,4 +14,4 @@ dnmonster:
   image: amouat/dnmonster:1.0
 
 redis:
-  image: redis:3.0
+  image: redis:3.0.7
